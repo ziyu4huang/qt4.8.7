@@ -590,7 +590,6 @@ public:
 
     QString(int size, Qt::Initialization);
 
-private:
 #if defined(QT_NO_CAST_FROM_ASCII) && !defined(Q_NO_DECLARED_NOT_DEFINED)
     QString &operator+=(const char *s);
     QString &operator+=(const QByteArray &s);
@@ -599,6 +598,7 @@ private:
     QString &operator=(const char  *ch);
     QString &operator=(const QByteArray &a);
 #endif
+private:
 
     struct Data {
         QBasicAtomicInt ref;

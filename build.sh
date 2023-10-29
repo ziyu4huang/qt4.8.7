@@ -1,0 +1,1 @@
+git clean -dxf && ./configure -prefix /home/ziyu4huang/tools/Qt-4.8.7 -prefix-install -release -opensource -confirm-license -nomake test -platform linux-g++ -no-javascript-jit  -no-scripttools  -no-webkit -no-script -no-qt3support && make -j16
